@@ -1,9 +1,8 @@
-# 3-Tier Enterprise Network Simulation
+# 3-Tier  Network Simulation
 
 ## Project Overview
-This project simulates a **3-tier enterprise network** using Cisco Packet Tracer.  
-It demonstrates the design and implementation of a scalable and secure enterprise network, including **Access, Distribution, and Core layers**, VLAN segmentation, inter-VLAN routing, DMZ deployment, and firewall security.
-
+This project simulates a **3-tier enetwork** using Cisco Packet Tracer.  
+It demonstrates the design and implementation of a scalable and secure  network, including **Access, Distribution, and Core layers**, VLAN segmentation, inter-VLAN routing, 
 ---
 
 ## Network Topology
@@ -34,24 +33,13 @@ It demonstrates the design and implementation of a scalable and secure enterpris
 - Inter-VLAN routing configured on Distribution/Core switches.
 - HSRP implemented for **redundancy and high availability**.
 
-### Access Control & Security
-- ASA Firewall controls traffic:
-  - **Inside → Outside:** NAT for Internet access.
-  - **Outside → DMZ:** ACLs allow HTTP/HTTPS only.
-- VLAN segmentation ensures isolation between departments and services.
 
-### DMZ Deployment
-- Webserver IP: `192.168.50.10`
-- Accessible from Inside VLANs for testing HTTP/HTTPS traffic.
-- DMZ isolated from other internal networks to prevent unauthorized access.
-
----
 
 ## Testing & Results
 - **Inside VLAN → Inside VLAN:** Allowed according to routing and ACLs.
 - **Inside VLAN → DMZ:** Ping and HTTP/HTTPS tests successful.
 - **Inside VLAN → Internet:** NAT allows external connectivity (simulated in Packet Tracer).
-- **Outside → DMZ:** ACL restricts access to HTTP/HTTPS only; all other traffic blocked.
+- **Outside → Lan: 172.16.1.0/24 ( services)
 
 ---
 
@@ -65,7 +53,7 @@ It demonstrates the design and implementation of a scalable and secure enterpris
 ---
 
 ## Skills Demonstrated
-- Designing **3-tier enterprise networks**
+- Designing **3-tier  networks**
 - VLAN segmentation and inter-VLAN routing
 - High availability via HSRP
 - Firewall configuration with NAT and ACL
